@@ -6,16 +6,15 @@
                                    / !! \
                                   /______\
 [this file is useful for the people like me who forget some command it's like a cheat sheet]
-VIM is the file editor of CLI interface 
-1
+VIM is the file editor of CLI interface
 
 ____________________________________________
-|	  most important command line          |
-|	:q (exit without change)               |
-|	:wq (save the change)                  |
-|	:wq! (save the change recursively)     |
-|	:q! (exit without change recursively)  |
-|	:w for save the file                   |
+|     most important command line          |
+|   :q (exit without change)               |
+|   :wq (save the change)                  |
+|   :wq! (save the change recursively)     |
+|   :q! (exit without change recursively)  |
+|   :w for save the file                   |
 |__________________________________________|
 
 
