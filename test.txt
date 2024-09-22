@@ -7,6 +7,8 @@
 								  /______\
 [this file is useful for the people like me who forget some command it's like a cheat sheet]
 VIM is the file editor of CLI interface 
+1
+
 ____________________________________________
 |     most important command line  		   |
 |	:q (exit without change)			   |
