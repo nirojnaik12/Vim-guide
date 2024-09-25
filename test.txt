@@ -33,16 +33,21 @@ there just single command, require just a key
 
 some usefull keys:-
 d for delete a single latter
-D for delete a words after the cursor
+D for delete rest of the line after the cursor
 dd for delete entire line
 dw for delete a word from cursor to the end of the word or remaining alphabets of the word
-diw for delete a word
+diw for delete the word
+d% for delete the paragraph including the bracket
+r for replace the alphabet on which the cursor is availabel
 y for copy
 Y for copy entire line
+yy for copy entire line
+yiw for copy the word where cursor is placed
 p for pest
 u for undo
 Ctrl+r for redo
 cc for change delete and insert mode
+ciw chang the word
 c for cut the selection
 Ctrl+e for scroll up
 Ctrl+y for scroll down
@@ -52,7 +57,19 @@ k for up nevigation
 j for down nevigation
 w for jump between words (special case keys are treated as a single word)
 W for jump between words (special case keys are treated as same as alphbet)
+b for move backword along the words(beginning)
+e for move forword along the words(ending)
+0 (zero) to move the cursor to the beginning of the line
+$ for move the cursor to the end of the line
+% for move the bracket selection
+t for telepote to before the desire alphabet
+T Backward same as t
+f to find the alphabet
+F Backward same as f
 
+
+
+by using key binding with the number it can give you excilent result, ease of work
 -----------------------------------------------------------------------------------------
 
 (ii)COMMAND LINE MODE
