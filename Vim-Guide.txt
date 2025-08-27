@@ -111,3 +111,52 @@ for example
 after selection you can perform commad like delete d copy y and others
 	v to enter into visual mode
 	
+
+(vim multiple window management)-------------------------------------------------------------
+
+Vim offers powerful window management features to enhance your editing workflow. Here are common shortcuts for working with multiple windows in Vim:
+Splitting Windows:
+
+    Horizontal Split:
+        Ctrl + W, S or :split or :sp (splits the current window horizontally, displaying the same buffer in both)
+        :split [filename] or :sp [filename] (splits horizontally and opens filename in the new window) 
+    Vertical Split:
+        Ctrl + W, V or :vsplit or :vs (splits the current window vertically, displaying the same buffer in both)
+        :vsplit [filename] or :vs [filename] (splits vertically and opens filename in the new window)
+
+Navigating Between Windows:
+
+    Move to Adjacent Window:
+        Ctrl + W, h (move to the window on the left)
+        Ctrl + W, l (move to the window on the right)
+        Ctrl + W, k (move to the window above)
+        Ctrl + W, j (move to the window below) 
+    Cycle Through Windows:
+        Ctrl + W, w or Ctrl + W, Ctrl + W (cycles through windows in the current split layout) 
+    Move to Specific Window:
+        Ctrl + W, t (move to the top-left window)
+        Ctrl + W, b (move to the bottom-right window)
+        {count}Ctrl + W, w (move to the Nth window, where N is count)
+
+Resizing Windows:
+
+    Ctrl + W, + (increase current window height)
+    Ctrl + W, - (decrease current window height)
+    Ctrl + W, > (increase current window width)
+    Ctrl + W, < (decrease current window width)
+    Ctrl + W, = (make all windows equal in size)
+
+Closing Windows:
+
+    Ctrl + W, q or :q (closes the current window, if it's the only window, it exits Vim)
+    :only (closes all other windows, leaving only the current one open)
+
+Moving Windows:
+
+    Ctrl + W, H (move current window to the far left)
+
+Ctrl + W, L (move current window to the far right)
+Ctrl + W, K (move current window to the far top) 
+Ctrl + W, J (move current window to the far bottom) 
+Ctrl + W, r (rotate windows in the current split, works for vertical splits)
+Ctrl + W, R (rotate windows in the current split in reverse order)
