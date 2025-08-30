@@ -92,3 +92,81 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 
+" Start NERDTree and leave the cursor in it.
+autocmd VimEnter * NERDTree | wincmd p
+
+
+"+--------------------------------------------------------+
+"|-██████╗-█████╗-██╗---██╗████████╗██╗-██████╗-███╗---██╗|
+"|██╔════╝██╔══██╗██║---██║╚══██╔══╝██║██╔═══██╗████╗--██║|
+"|██║-----███████║██║---██║---██║---██║██║---██║██╔██╗-██║|
+"|██║-----██╔══██║██║---██║---██║---██║██║---██║██║╚██╗██║|
+"|╚██████╗██║--██║╚██████╔╝---██║---██║╚██████╔╝██║-╚████║|
+"|-╚═════╝╚═╝--╚═╝-╚═════╝----╚═╝---╚═╝-╚═════╝-╚═╝--╚═══╝|
+"+--------------------------------------------------------+
+
+" you must install the plugin manager to take benefits of plugins
+" use the vim-plug plugin manager.
+" after installation of plugin manager add the plugins like I've done below
+" And execute the command ":PlugInstall" to install these plugins
+" PLUGINS------------------------------------------------------------------------{{{
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'dense-analysis/ale'
+
+Plug 'preservim/nerdtree'
+
+Plug 'itchyny/lightline.vim'
+
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'mattn/emmet-vim'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'nordtheme/vim'
+
+Plug 'jacoborus/tender.vim'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
+
+Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.11.0' }
+
+
+
+call plug#end()
+
+
+" }}}
+
+" STATUS LINE ------------------------------------------------------------ {{{
+
+" Clear status line when vimrc is reloaded.
+set statusline=
+
+" Status line left side.
+set statusline+=\ %F\ %M\ %Y\ %R
+
+" Use a divider to separate the left side from the right side.
+set statusline+=%=
+
+" Status line right side.
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+
+" Show the status on the second to last line.
+set laststatus=2
+
+" vim airline
+let g:airline#extensions#tabline#enabled = 1
+
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+
+
+" }}}
